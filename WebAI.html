@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebAI – Hybrid Website Builder</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+ <style>
+    /* General Styles */
+ 
+
+    /* Button Styles */
+    .demo-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: linear-gradient(to right, #2dd4bf, #3b82f6); /* Teal to Blue gradient */
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .demo-button:hover {
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+
+    /* Section Spacing */
+    section {
+      margin-bottom: 40px;
+    }
+  </style>
+  
+</head>
+<body class="bg-gray-900 text-white min-h-screen font-sans">
+  <!-- Background Shapes -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-teal-700 rounded-full filter blur-xl opacity-10 animate-pulse"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-blue-800 rounded-full filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+    <div class="absolute top-1/2 right-1/2 w-80 h-80 bg-purple-900 rounded-full filter blur-xl opacity-10 animate-pulse delay-2000"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative z-10 pt-24 pb-16 px-6 md:px-12 max-w-6xl mx-auto text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 bg-gradient-to-r from-white via-teal-300 to-blue-200 bg-clip-text text-transparent">
+      Websites Built by AI.<br />
+      <span class="text-teal-400">Refined by Humans.</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+      Launch faster with WebAI—a hybrid website building system combining AI speed with human creativity.
+    </p>
+    <button onclick="scrollToSection('demo')" class="demo-button">
+      Request Website
+    </button>
+  </section>
+
+  <!-- What is WebAI Section -->
+  <section id="what-is" class="py-16 px-6 md:px-12 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">What is WebAI?</h2>
+    <p class="text-gray-300 text-lg mb-8">
+      WebAI is a website creation service that blends AI automation with human design expertise.
+    </p>
+    <div class="text-gray-300 space-y-2">
+      <p>You tell us what you need →</p>
+      <p>The AI builds the first version →</p>
+      <p>Our team refines it →</p>
+      <p>Your website goes live, faster and better.</p>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section id="features" class="py-16 px-6 md:px-12 max-w-6xl mx-auto">
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Key Features</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-teal-500 transition">
+        <h4 class="font-bold text-teal-400 text-xl mb-3">AI-Powered Site Creation</h4>
+        <p class="text-gray-300">The AI generates structure, content, and design fast.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-teal-500 transition">
+        <h4 class="font-bold text-teal-400 text-xl mb-3">Human Expert Review</h4>
+        <p class="text-gray-300">Real designers polish your site for quality and conversions.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-teal-500 transition">
+        <h4 class="font-bold text-teal-400 text-xl mb-3">Edits & Customization</h4>
+        <p class="text-gray-300">We adjust the site to match your brand and goals.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-teal-500 transition">
+        <h4 class="font-bold text-teal-400 text-xl mb-3">Fully Managed Setup</h4>
+        <p class="text-gray-300">No code, no drag & drop, no stress.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-teal-500 transition">
+        <h4 class="font-bold text-teal-400 text-xl mb-3">Fast Turnaround</h4>
+        <p class="text-gray-300">Launch your site in days, not weeks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-16 px-6 md:px-12 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-8">How It Works</h3>
+    <ol class="space-y-4 text-gray-300 text-lg text-left max-w-md mx-auto list-decimal list-inside">
+      <li><strong>Step 1:</strong> Tell us your niche and what you need.</li>
+      <li><strong>Step 2:</strong> WebAI builds the first draft automatically.</li>
+      <li><strong>Step 3:</strong> Our human team refines, edits, and perfects it.</li>
+      <li><strong>Step 4:</strong> Your website goes live—fast, sleek, and optimized.</li>
+    </ol>
+  </section>
+
+  <!-- Portfolio/Demo Section -->
+  <section id="portfolio" class="py-16 px-6 md:px-12 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-4">Want to see examples?</h3>
+    <p class="text-gray-300 mb-6">
+      Demos available on request. Let us show you how AI and humans build websites together.
+    </p>
+    <a href="https://docs.google.com/document/d/1GdjYwXRDTaa4tbvm1HmzQtZTssBeRmgyvnrFEibaS-A/edit?tab=t.96rv319uysqx#heading=h.tdrxf02ih41f" class="demo-button">
+      Request a Demo
+    </a>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="demo" class="py-16 px-6 md:px-12 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-4">Start your website today.</h3>
+    <a href="https://docs.google.com/document/d/1GdjYwXRDTaa4tbvm1HmzQtZTssBeRmgyvnrFEibaS-A/edit?tab=t.96rv319uysqx#heading=h.tdrxf02ih41f" class="demo-button">
+      Request Website
+    </a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 md:px-12 max-w-4xl mx-auto text-center">
+    <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+    <ul class="space-y-3 text-gray-300 text-lg">
+      <li>📩 Email: viren.g.tikwani@gmail.com</li>
+      <li>📱 Instagram: @virentikwani</li>
+    </ul>
+  </section>
+
+  <!-- Closing Line -->
+  <section class="pb-16 px-6 md:px-12 max-w-4xl mx-auto text-center">
+    <p class="text-gray-400 text-lg">
+      Fast like AI. Smart like humans.<br />
+      That's WebAI.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 px-6 md:px-12 border-t border-gray-800 text-sm text-gray-500 text-center">
+    © 2025 Vine. All rights reserved.
+  </footer>
+</body>
+</html>

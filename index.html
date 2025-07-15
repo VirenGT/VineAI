@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vine AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Background Shapes -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-800 rounded-full filter blur-xl opacity-10 animate-pulse"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-blue-600 rounded-full filter blur-xl opacity-10 animate-pulse delay-1000"></div>
+    <div class="absolute top-1/2 right-1/2 w-80 h-80 bg-pink-500 rounded-full filter blur-xl opacity-10 animate-pulse delay-2000"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-30 backdrop-blur-lg bg-black/30 border-b border-gray-700 px-6 py-4 flex justify-between items-center shadow-lg">
+    <h1 class="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-400 via-white to-blue-400 bg-clip-text text-transparent">Vine</h1>
+    <ul class="hidden md:flex space-x-6 text-sm uppercase tracking-wider">
+      <li><button onclick="scrollToSection('home')" class="hover:text-purple-400 transition">Home</button></li>
+      <li><button onclick="scrollToSection('services')" class="hover:text-purple-400 transition">Services</button></li>
+      <li><button onclick="scrollToSection('process')" class="hover:text-purple-400 transition">Process</button></li>
+      <li><button onclick="scrollToSection('contact')" class="hover:text-purple-400 transition">Contact</button></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative z-10 pt-24 pb-16 px-6 md:px-12 max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 bg-gradient-to-r from-white via-purple-300 to-blue-200 bg-clip-text text-transparent">
+      Turn Missed Leads into Paying Clients — With AI.
+    </h2>
+    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+      Let AI chat, call, and close for your business 24/7. No code. No developers.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button onclick="scrollToSection('services')" class="px-8 py-3 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-500 hover:to-blue-400 text-white font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
+        Explore Systems
+      </button>
+      <a href="https://docs.google.com/document/d/1GdjYwXRDTaa4tbvm1HmzQtZTssBeRmgyvnrFEibaS-A/edit?tab=t.96rv319uysqx#heading=h.tdrxf02ih41f" target="_blank" rel="noopener noreferrer" class="px-8 py-3 rounded-full border border-purple-400 hover:bg-purple-900/30 text-white font-semibold shadow-lg transform hover:scale-105 transition-all duration-300">
+        Book a Free Demo
+      </a>
+    </div>
+    <div class="mt-16 relative">
+      <img src="https://i.pinimg.com/originals/ae/d1/1d/aed11d6975231b91c8e992c02b8376da.gif" alt="AI Interface" class="rounded-2xl shadow-2xl border border-purple-500/30 mx-auto" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 px-6 md:px-12 max-w-6xl mx-auto">
+    <h3 class="text-3xl md:text-4xl font-bold mb-12 text-center">Our AI-Powered Tools</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-purple-500 hover:shadow-purple-500/20 transition cursor-pointer">
+        <h4 class="text-xl font-bold mb-3">🧠 AutoAgent – AI Chat Agent</h4>
+        <pre class="text-gray-300 whitespace-pre-line text-sm">
+Replies to leads in under 7 seconds
+Books appointments directly in your calendar
+Explains your services in real time
+Logs everything into Google Sheets
+Works for all industries — clinics, real estate, freelancers, and more</pre>
+        <a href="autoagent.html" class="inline-block mt-4 text-purple-400 hover:underline font-medium">Learn More →</a>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-purple-500 hover:shadow-purple-500/20 transition cursor-pointer">
+        <h4 class="text-xl font-bold mb-3">📞 VoxAI – AI Voice Call Agent</h4>
+        <pre class="text-gray-300 whitespace-pre-line text-sm">
+Instantly answers calls
+Speaks like a real human
+Handles FAQs, bookings, scheduling
+Works 24/7 without breaks</pre>
+        <a href="voxai.html" class="inline-block mt-4 text-purple-400 hover:underline font-medium">Learn More →</a>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 shadow-lg hover:border-purple-500 hover:shadow-purple-500/20 transition cursor-pointer">
+        <h4 class="text-xl font-bold mb-3">🌐 WebAI</h4>
+        <pre class="text-gray-300 whitespace-pre-line text-sm">
+Launches websites in minutes
+Mobile-responsive, SEO-optimized
+Designed for lead conversion
+Fully editable with no coding</pre>
+        <a href="WebAI.html" class="inline-block mt-4 text-purple-400 hover:underline font-medium">Learn More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="py-16 px-6 md:px-12 max-w-6xl mx-auto">
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Your Journey With Vine</h3>
+    <div class="grid md:grid-cols-4 gap-6 text-center">
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition">
+        <span class="block text-3xl font-bold text-purple-400 mb-3">1</span>
+        <p>Initial Consultation – Understand your needs and goals</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition">
+        <span class="block text-3xl font-bold text-purple-400 mb-3">2</span>
+        <p>Custom Solution Design – Build your AI workflows</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition">
+        <span class="block text-3xl font-bold text-purple-400 mb-3">3</span>
+        <p>Training & Launch – Personalized onboarding</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-800/50 border border-gray-700 hover:border-purple-500 transition">
+        <span class="block text-3xl font-bold text-purple-400 mb-3">4</span>
+        <p>Ongoing Support – We help optimize and scale</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 md:px-12 max-w-4xl mx-auto">
+    <h3 class="text-3xl md:text-4xl font-bold text-center mb-8">Get in Touch</h3>
+    <div class="text-center mb-8">
+      <p>Email: viren.g.tikwani@gmail.com</p>
+      <p>Instagram: <a href="https://www.instagram.com/virentikwani?igsh=ZGQ3dG0yaGpzdnlu" target="_blank" class="text-purple-400 hover:underline">@virentikwani</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- (unchanged for brevity) -->
+  <!-- Footer -->
+  <footer class="py-8 px-6 md:px-12 border-t border-gray-800 text-sm text-gray-500">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        © 2025 Vine. All rights reserved.
+      </div>
+      <div class="flex space-x-4">
+        <button onclick="scrollToSection('home')" class="hover:text-white transition">Home</button>
+        <button onclick="scrollToSection('services')" class="hover:text-white transition">Services</button>
+        <button onclick="scrollToSection('process')" class="hover:text-white transition">Process</button>
+        <button onclick="scrollToSection('contact')" class="hover:text-white transition">Contact</button>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <span class="inline-flex items-center gap-1 text-xs text-gray-600">
+        🌍 Serving businesses worldwide
+      </span>
+    </div>
+  </footer>
+</body>
+</html>
